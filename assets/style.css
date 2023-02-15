@@ -28,6 +28,7 @@ a {
     display: none;
 }
 header {
+    max-width: 375px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,8 +45,8 @@ header .menu-hamburger {
     position: absolute;
     right: 0;
     background-color: var(--off-white);
-    width: 70%;
-    height: 100%;
+    width: 75%;
+    height: 100vh;
 }
 .menu-list-mobile .menu-close{
     position: absolute;
@@ -68,6 +69,7 @@ header .menu-hamburger {
 /*main_central*/
 main {
     width: 100%;
+    max-width: 375px;
     padding: 0rem 1rem;
 }
 .central-img {
@@ -179,6 +181,9 @@ main {
         font-size: 1.8rem;
         margin: 6rem auto;
     }
+    header {
+        max-width: none;
+    }
     header .menu-logo {
         width: 80px;
     }
@@ -189,6 +194,8 @@ main {
         margin-left: 3rem;
     }
     main {
+        width: 100%;
+        max-width: none;
         margin-top: 4rem;
         display: grid;
         grid-template-columns: 70% 30%;
